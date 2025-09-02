@@ -13,7 +13,7 @@ def evaluate_metrics(y_true, y_score, threshold=None, save_dir="results"):
         y_true (list[int] | np.array): истинные метки классов (0 = real, 1 = fake);
         y_score (list[float] | np.array): предсказанные вероятности принадлежности к классу 1 (fake);
         threshold (float): порог бинаризации для перевода вероятностей в метки;
-        save_dir (str): папка, куда сохранять графики;
+        save_dir (str): папка, куда сохранятются графики;
 
         dict: словарь с рассчитанными метриками
     """
@@ -69,3 +69,4 @@ def evaluate_metrics(y_true, y_score, threshold=None, save_dir="results"):
     }
 
     return metrics
+
